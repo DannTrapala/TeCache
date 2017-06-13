@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ЛегкийПлатеж</string>
+    <string name="Titulo">ЛегкийПлатеж</string>
+    <string name="Texto1">Заполните следующие места:</string>
+    <string name="Texto2">Введите цену платить</string>
+    <string name="Texto3">Введите число рассрочку</string>
+    <string name="Texto4">Введите интерес (0%-100%)</string>
+    <string name="Boton2">Выберите тип платежа</string>
+    <string name="Boton1">Pассчитывать</string>
+    <string name="Texto5">Всего:</string>
+    <string name="Texto6">Pезультат</string>
+    <string name="Texto7">Каждый взнос вы будете платить:</string>
+    <string name="Texto8">Общий месяц</string>
+    <string name="Texto9">Введите скидку (0%-100%)</string>
+    <string name="Instrucciones">Введите проценты и интересов между 0% и 100%</string>
+    <string name="Texto10">Год</string>
+    <string name="Texto11">Месяц</string>
+    <string name="Texto12">Hеделя</string>
+    <string name="Texto13">День</string>
+    <string name="Texto14">Выберите тип платежа (по умолчанию месяц)</string>
+</resources>
