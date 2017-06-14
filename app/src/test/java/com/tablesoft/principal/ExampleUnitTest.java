@@ -1,4 +1,4 @@
-package com.tablesoft.tecache;
+package com.tablesoft.principal;
 
 import org.junit.Test;
 

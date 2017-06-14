@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">TeCaché</string>
-    <string name="start_video">Grabar video</string>
-    <string name="stop_video">Parar video</string>
+    <string name="app_name">Te Caché</string>
+    <string name="google_maps_key">AIzaSyDr8GRQ3f1JEBNCEIGQYr0IYFbaX80iLYw</string>
+    <string name="title_activity_info">infoActivity</string>
+    <string name="title_activity_view_list_contents">ViewListContents</string>
 </resources>
