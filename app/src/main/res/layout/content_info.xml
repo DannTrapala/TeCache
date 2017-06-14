@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:ems="10"
+        android:id="@+id/editDonde"
+        android:hint="¿Dónde?"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textShortMessage"
+        android:ems="10"
+        android:id="@+id/editQuien"
+        android:hint="¿A quién?"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:ems="10"
+        android:id="@+id/editQue"
+        android:hint="¿Para qué?"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editMonto"
+        android:hint="Monto (0 si no hubo)"
+        android:inputType="number"
+        android:layout_weight="0.5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:ems="10"
+        android:id="@+id/editComentarios"
+        android:hint="Comentarios"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <Button
+            android:text="Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnView"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

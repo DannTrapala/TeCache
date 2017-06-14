@@ -1,4 +1,4 @@
-package com.tablesoft.tecache;
+package com.tablesoft.principal;
 
 import android.app.Service;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.hardware.Camera.Size;
 import android.media.MediaRecorder;
 import android.os.Environment;
 import android.os.IBinder;
+import android.os.PowerManager;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -17,8 +19,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class RecorderService extends Service {
-    private static final String TAG = "RecorderService";
+/**
+ * Created by Boris on 29/01/2017.
+ */
+
+public class RecorderService extends Service
+{
+    private static final String TAG = "VideoRecorderService";
     private SurfaceView mSurfaceView;
     private SurfaceHolder mSurfaceHolder;
     private static Camera mServiceCamera;
@@ -60,7 +67,7 @@ public class RecorderService extends Service {
 
     public boolean startRecording(){
         try {
-            Toast.makeText(getBaseContext(), "Recording Started", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Comienza la grabación", Toast.LENGTH_SHORT).show();
 
             mServiceCamera = Camera.open();
             Camera.Parameters params = mServiceCamera.getParameters();
@@ -118,7 +125,7 @@ public class RecorderService extends Service {
     }
 
     public void stopRecording() {
-        Toast.makeText(getBaseContext(), "Recording Stopped", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getBaseContext(), "Se termina la grabación", Toast.LENGTH_SHORT).show();
         try {
             mServiceCamera.reconnect();
 
@@ -152,3 +159,4 @@ public class RecorderService extends Service {
     }
 
 }
+

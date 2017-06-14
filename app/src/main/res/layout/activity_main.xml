@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.tablesoft.principal.CameraRecorder"
+    android:background="@color/cast_expanded_controller_progress_text_color">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/backgroundpink2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/logoletras"
+                    android:id="@+id/imageView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/backgroundpink" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/tentativo"
+                    android:id="@+id/imageView2"
+                    android:background="@drawable/tentativo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.7">
+
+                <Button
+                    android:text="Enviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="42dp"
+                    android:id="@+id/nextActivity"
+                    android:layout_alignBaseline="@+id/buttonLocation"
+                    android:layout_alignBottom="@+id/buttonLocation"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    tools:text="Button" />
+
+                <Button
+                    android:text="Localización"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonLocation"
+                    android:layout_marginStart="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1">
+
+            <SurfaceView
+                android:layout_width="0.1dp"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="121dp"
+                android:id="@+id/surfaceView1" />
+
+            <ImageButton
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                app:srcCompat="@color/cast_expanded_controller_ad_container_white_stripe_color"
+                android:id="@+id/StopVideoService"
+                android:background="@drawable/boton_video_22"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                app:srcCompat="@color/cast_expanded_controller_ad_container_white_stripe_color"
+                android:id="@+id/StartVideoService"
+                android:background="@drawable/boton_video_11"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/StopVideoService"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

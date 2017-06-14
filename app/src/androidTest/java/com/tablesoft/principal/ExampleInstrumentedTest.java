@@ -1,4 +1,4 @@
-package com.tablesoft.tecache;
+package com.tablesoft.principal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.tablesoft.tecache", appContext.getPackageName());
+        assertEquals("com.tablesoft.principal", appContext.getPackageName());
     }
 }
